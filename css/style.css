@@ -1,0 +1,170 @@
+html, .background-home, body{
+    height: 100% !important;
+}
+/*reseteo del col y row*/
+.col .row{
+    margin: 0 !important;
+}
+.background-home{
+    background-image: linear-gradient( rgba(70, 70, 70, 0.35), rgba(21, 21, 21, 1)), url(../img/background-GMS.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: red;
+
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+.content-titleHome{
+    text-align: center;
+}
+.content-titleHome h1{
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 8px 7px 11px #000000;
+    font-weight: 300;
+}
+.content-titleHome .grade{
+    font-size: 153px;
+    line-height: 85px;
+}
+.content-titleHome .management{
+    font-size: 71px;
+    line-height: 85px;
+}
+.content-titleHome .system{
+    font-size: 135px;
+    line-height: 122px;
+}
+.grade, .management, .system{
+    /*line-height: initial;*/
+}
+.container-home{
+    padding-top: 15%;
+}
+/*la parte del form-login*/
+.form{
+}
+.content-form-login{
+    padding-left: 80px !important;
+}
+.form-login{
+    height: 300px;
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 400px;
+}
+.form-login{
+    margin: 0px auto;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 5px 2px 10px rgba(34, 35, 35, 0.6);
+    text-align:center;
+    border-radius: 5px;
+}
+.form-login .row{
+    /*border: 1px solid rgba(234, 231, 231, 1);*/
+}
+.form-login label{
+    color: black;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+/*.form-login label, */
+.form-login .title-login{
+     font-family: 'Kaushan Script', cursive;
+     text-transform: capitalize;
+}
+.form-login .title-login{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(4, 21, 22, 1);
+    border-bottom: 1px dashed rgba(231, 231, 231, 1);
+    margin-bottom: 18px;
+    padding: 15px 0;
+}
+input-field{
+    padding: 5px;
+}
+/*placeholder-color*/
+::placeholder { color: rgba(0, 0, 0, 0.5)}
+:-ms-input-placeholder { color: rgba(0, 0, 0, 0.5); }
+::-webkit-input-placeholder { color: rgba(0, 0, 0, 0.5); }
+::-moz-placeholder { color: rgba(0, 0, 0, 0.5); }
+.mi-input::placeholder { color: rgba(0, 0, 0, 0.5);}
+
+/*btn*/
+.btn{
+    color: white;
+    background-color: #141515;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+ /* label focus color */
+   .input-field input[type=email]:focus + label, .input-field input[type=password]:focus + label {
+     color: #fff !important;
+}
+/* label underline focus color */
+   .input-field input[type=email]:focus, .input-field input[type=password]:focus {
+     border-bottom: 1px solid #fff !important;
+     box-shadow: 0 1px 0 0 #fff !important;
+   }
+/*prefix color input*/
+.input-field .prefix.active{
+color: white !important;
+}
+.btn, .btn-large, .btn-small, .btn-floating, .btn-large, .btn-small, .btn-flat{
+    font-size: 10px;
+}
+.input-field .prefix{
+    width: 0rem;
+}
+
+@media only screen and (max-width: 992px){
+    .content-titleHome .grade{
+        font-size: 15px;
+        line-height: 8px;
+    }
+    .content-titleHome .management{
+        font-size: 15px;
+        line-height: 8px;
+    }
+    .content-titleHome .system{
+        font-size: 15px;
+        line-height: 9px;
+    }
+    .content-form-login{
+        padding-left: 0px !important;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 992px){
+    .content-titleHome .grade, .content-titleHome .management, .content-titleHome .system{
+        font-size: 50px;
+        line-height: 9px;
+        font-weight: bold;
+    }
+}
+@media only screen and (max-width: 600px){
+    .content-titleHome .grade, .content-titleHome .management, .content-titleHome .system{
+        font-size: 50px;
+        line-height: 9px;
+        font-weight: bold;
+    }
+    .content-form-login{
+        padding: 5px !important;
+    }
+    .container-home{
+        padding: 50px 0;
+    }
+
+}
+@media only screen and (max-width: 350px){
+    .content-titleHome .grade, .content-titleHome .management, .content-titleHome .system{
+        font-size: 30px;
+        line-height: 2px;
+        font-weight: bold;
+    }
+}

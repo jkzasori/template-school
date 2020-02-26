@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="">
+    <title>PANEL</title>
+    <!--Import Google Icon Font-->
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+         <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Oswald|Material+Icons|Pontano+Sans|Yrsa" rel="stylesheet">
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!-- Compiled and minified JavaScript -->
+    
+</head>
+</head>
+<body>
+	<div class="panel">
+		<div class="menu-panel">
+			<div class="title-menu">
+				<ul>
+					<li class="title"><a href="panel.html">grade Management system</a></li>
+					<li class="user"><i class="material-icons">account_circle</i>José Támara<br>administrador</li>
+				</ul>
+				<div>
+					<ul class="dashboard-t">
+						<li><a href="panel.html"><i class="material-icons">dashboard</i>Dashboard</a></li>
+						<li><a href="/"><i class="material-icons">keyboard_arrow_left</i>Salir</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="content-menu">
+				<ul>
+					<li><a href="teacher.html"><i class="material-icons">assignment_ind</i> teacher</a></li>
+					<li><a href="student.html"><i class="material-icons">assignment</i> student</a></li>
+					<li><a href="config.html"><i class="material-icons">build</i> config</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="container-panel">
+			<div class="header-panel">
+				dashboard
+			</div>
+			<div class="content-panel">
+				<h5 class="title">Resumen escolar</h5>
+				<p>
+				Año escolar: <span>2018</span><br>periodo: <span>1</span><br>tipo de usuario: <span>estudiantes</span></p>
+				<a href="config3.html" class="btn-floating btn"> add</a>
+				<h5 class="title-table">estudiantes en escuela</h5>
+				<table class="responsive-table centered">
+					<thead>
+						<th>nombre</th>
+						<th>código</th>
+						<th>identificación</th>
+						<th>Edit</th>
+					</thead>
+					<tr>
+						<td>josé támara</td>
+						<td>12</td>
+						<td>12345</td>
+						<td><a href="config3.html" class="btn-floating waves-effect waves-light black"><i class="material-icons large">edit</i></a></td>
+					</tr>
+					<tr>
+						<td>José támara</td>
+						<td>15</td>
+						<td>152342</td>
+						<td><a href="config3.html" class="btn-floating waves-effect waves-light black"><i class="material-icons large">edit</i></a></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+    	$('select').formSelect();
+		});
+	</script>	
+	
+</body>
+</html>
